@@ -41,3 +41,11 @@ body{
     text-align: center;
     font-size: 18px
 }
+.registration-page a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.registration-page button {
+    width: 100%;
+    background: #1f53c5;
+}
