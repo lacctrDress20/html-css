@@ -27,7 +27,7 @@ body{
     margin-bottom: 20px;
 }
 .content{
-    width: 100px;
+    width: 100%;
     background: #24303c;
     padding: 10px;
     border-radius: 4px;
@@ -35,4 +35,9 @@ body{
     border: 1px solid #24303c;
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
+}
+.registration-page p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px
 }
