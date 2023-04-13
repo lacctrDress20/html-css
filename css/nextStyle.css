@@ -28,12 +28,13 @@ body{
 }
 .content{
     width: 100%;
-    background: #24303c;
+    border: none;
+    background: transparent;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #24303c;
-    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid floralwhite;
+    font-family: 'Arial';
     font-size: 18px;
 }
 .registration-page p {
@@ -45,7 +46,12 @@ body{
     color: white;
     text-decoration: underline;
 }
-.registration-page button {
+.registration-page .boton {
     width: 100%;
-    background: #1f53c5;
+    background: #b80f22;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
 }
