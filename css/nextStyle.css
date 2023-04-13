@@ -22,3 +22,17 @@ body{
     font-family: sans-serif;
     height: 100vh;
 }
+.registration-page h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.content{
+    width: 100px;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #24303c;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
