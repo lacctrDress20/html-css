@@ -38,3 +38,7 @@ body{
     font-weight: bold;
     display: block;
 }
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
