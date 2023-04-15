@@ -13,8 +13,8 @@ const body = document.querySelector("body"),
         body.classList.toggle("dark");
 
         if(body.classList.contains("drak")){
-          modeText.innerText = "Light Mode"
-        }else{
           modeText.innerText = "Dark Mode"
+        }else{
+          modeText.innerText = "Light Mode"
         }
       });

@@ -6,12 +6,12 @@
     box-sizing: border-box;
 }
 :root{
-    --body-color: #E4E9f7;
-    --sidebar-color: #FFF;
-    --primary-color: #695CFE;
-    --primary-color-ligh: #F6F5FF;
-    --toggle-color: #DDD;
-    --text-color: #707070;
+    --body-color: #18191A;
+    --sidebar-color: #242526;
+    --primary-color: #3A3B3C;
+    --primary-color-ligh: #3A3B3C;
+    --toggle-color: #FFF;
+    --text-color: #CCC;
 
     --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
@@ -24,12 +24,12 @@ body{
     transition: var(--tran-04);
 }
 body.dark{
-    --body-color: #18191A;
-    --sidebar-color: #242526;
-    --primary-color: #3A3B3C;
-    --primary-color-ligh: #3A3B3C;
-    --toggle-color: #FFF;
-    --text-color: #CCC;
+    --body-color: #E4E9f7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-ligh: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
 }
 /* ===== Sidebar ===== */
 .sidebar{
@@ -191,6 +191,9 @@ body.dark .sidebar li a:hover .text {
     opacity: 0;
 }
 body.dark .menu-bar .mode i.sun{
+    opacity: 1;
+}
+body.dark .menu-bar .mode i.moon{
     opacity: 0;
 }
 .menu-bar .mode .toggle-switch{
