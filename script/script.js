@@ -11,4 +11,10 @@ const body = document.querySelector("body"),
 
       modeSwtich.addEventListener("click", () =>{
         body.classList.toggle("dark");
+
+        if(body.classList.contains("drak")){
+          modeText.innerText = "Light Mode"
+        }else{
+          modeText.innerText = "Dark Mode"
+        }
       });

@@ -185,8 +185,12 @@ body.dark .sidebar li a:hover .text {
 }
 .menu-bar .mode i{
     position: absolute;
+    transition: var(--tran-03);
 }
 .menu-bar .mode i.sun{
+    opacity: 0;
+}
+body.dark .menu-bar .mode i.sun{
     opacity: 0;
 }
 .menu-bar .mode .toggle-switch{
