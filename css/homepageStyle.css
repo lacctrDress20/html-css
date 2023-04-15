@@ -232,3 +232,9 @@ body.dark .switch::before{
     left: 24px;
 
 }
+.home{
+    position: ;
+    height: 100vh;
+    width:calc(100% - 88px);
+    background: 
+}
