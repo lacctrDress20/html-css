@@ -5,7 +5,10 @@ const body = document.querySelector("body"),
       modeSwtich = body.querySelector(".mode"),
       modeText = body.querySelector(".mode-text");
 
+      toggle.addEventListener("click", () =>{
+        sidebar.classList.toggle("close");
+      });
+
       modeSwtich.addEventListener("click", () =>{
         body.classList.toggle("dark");
       });
-

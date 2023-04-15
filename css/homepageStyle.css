@@ -21,6 +21,7 @@
 body{
     height: 100vh;
     background: var(--body-color);
+    transition: var(--tran-04);
 }
 body.dark{
     --body-color: #18191A;
@@ -39,12 +40,22 @@ body.dark{
     width: 250px;
     padding: 10px 14px;
     background: var(--sidebar-color);
+    transition: var(--tran-05);
 }
+
+.sidebar.close{
+    width: 88px
+}
+
 /* ===== Resuable CSS ===== */
 .sidebar .text {
     font-size: 16px;
     font-weight: 500;
     color: var(--text-color);
+}
+
+.sidebar.close .text{
+    opacity: 0;
 }
 .sidebar.imagen{
     min-width: 60px;
@@ -101,7 +112,7 @@ header .image-text .header-text {
     position: absolute;
     top: 50%;
     right: -25px;
-    transform: translateY(-50%);
+        transform: translateY(-50%) rotate(180deg);
     height: 25px;
     width: 25px;
     background: var(--primary-color);
@@ -111,9 +122,19 @@ header .image-text .header-text {
     border-radius: 50%;
     color: var(--sidebar-color);
     font-size: 22px;
+    transition: var(--tran-03);
+}
+.sidebar.close header .toggle{
+    transform: translateY(-50%);
+}
+
+body.dark .sidebar header .toggle{
+    transform: rotate(180deg);
+    color: var(--text-color);
 }
 .sidebar .search-box{
     background: var(--primary-color-ligh);
+    border-radius: 6px;
 }
 .search-box input{
     height: 100%;
@@ -140,6 +161,11 @@ header .image-text .header-text {
     color: var(--sidebar-color);
 }
 
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text {
+    color: var(--text-color);
+}
+
 .sidebar .menu-bar{
     height: calc(100% - 50px);
     display: flex;
@@ -147,6 +173,8 @@ header .image-text .header-text {
     justify-content: space-between;   
 }
 .menu-bar .mode{
+    position: relative;
+    border-radius: 6px;
     background: var(--primary-color-ligh);
 }
 .menu-bar .mode .moon-sun{
@@ -162,12 +190,16 @@ header .image-text .header-text {
     opacity: 0;
 }
 .menu-bar .mode .toggle-switch{
+    position: absolute;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     min-width: 60px;
     cursor: pointer;
+    border-radius: 6px;
+    background: var(--primary-color-ligh);
 }
 .toggle-switch .switch{
     position: relative;
@@ -190,6 +222,6 @@ header .image-text .header-text {
     
 }
 body.dark .switch::before{
-    left: 20px;
+    left: 24px;
 
 }
